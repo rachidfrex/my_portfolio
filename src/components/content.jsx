@@ -11,7 +11,7 @@ function Content() {
             <path d="M17 14.5C17 18.6421 13.6421 22 9.5 22C5.35786 22 2 18.6421 2 14.5C2 10.3579 5.35786 7 9.5 7C13.6421 7 17 10.3579 17 14.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
             <path d="M7 13L14.5 5.50003M18 2L16.5 3.5M22 6.00003L19 9M11 16L14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
-        </div>
+        </div> 
         <h3 className="text-xl font-semibold text-violet-600">who am I ?</h3>
        
         <p className="text-violet-600 text-sm text-justify">my name is rachid , i live in morocco , i'm a full stack developer , i love to learn new things and solve problems
