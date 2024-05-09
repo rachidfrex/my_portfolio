@@ -2,6 +2,7 @@ import './index.css'
 import Nav from './components/nav'
 import Header from './components/header'
 import Content from './components/content'
+import Build from './components/build'
 function App() {
 
   return (
@@ -9,6 +10,7 @@ function App() {
       <Nav/>
       <Header/>
       <Content/>
+      <Build/>
     </div>
       
 
