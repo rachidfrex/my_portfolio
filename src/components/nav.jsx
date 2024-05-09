@@ -16,33 +16,19 @@ function Nav() {
         <div
         className='flex justify-center items-center py-5'
         >
-         <nav className='text-center p-1.5 w-[280px] bg-indigo-100 rounded-full'>
-  <ul className='flex font-rubik text-indigo-600 justify-center items-center space-x-4 relative'>
-    <animated.div style={spring} className='absolute h-6 bg-white w-16 bottom-1 left-2  z-10 transition-transform duration-200'></animated.div>
-    <li
-      ref={activeLink === 'About' ? ref : null}
-      className={`px-3 py-0.5 rounded-full transition-colors duration-300 z-20 ${activeLink === 'About' ? 'bg-white' : ''}`}
-      onClick={() => setActiveLink('About')}
-    >
-      About
-    </li>
-    <li
-      ref={activeLink === 'Project' ? ref : null}
-      className={`px-3 py-1 rounded-full transition-colors z-20 duration-300 ${activeLink === 'Project' ? 'bg-white' : ''}`}
-      onClick={() => setActiveLink('Project')}
-    >
-      Project
-    </li>
-    <li
-      ref={activeLink === 'Contact' ? ref : null}
-      className={`px-3 py-1 rounded-full transition-colors z-20 duration-300 ${activeLink === 'Contact' ? 'bg-white' : ''}`}
-      onClick={() => setActiveLink('Contact')}
-    >
-      Contact
-    </li>
-    
-  </ul>
-</nav>
+         <nav className=' text-center p-1.5 w-[280px]   bg-indigo-100  rounded-full    '>
+            <ul className='flex font-rubik  text-indigo-600 justify-center items-center space-x-4 '>
+            <li className={`px-3 py-0.5 rounded-full ${activeLink === 'About' ? 'bg-white' : ''}`} onClick={() => setActiveLink('About')}>
+            About
+            </li>
+        <li className={`px-3 py-1 rounded-full ${activeLink === 'Project' ? 'bg-white' : ''}`}onClick={() => setActiveLink('Project')} > 
+        Project
+        </li>
+        <li className={`px-3 py-1 rounded-full ${activeLink === 'Contact' ? 'bg-white' : ''}`} onClick={() => setActiveLink('Contact')}>
+          Contact
+        </li>
+            </ul>
+        </nav>
         <div className=' absolute left-[5%] bg-indigo-100 rounded-full w-16 h-16 flex flex-col gap-5 items-center justify-center '>
             <h1
             className='text-xl font-poetsen text-indigo-600'
