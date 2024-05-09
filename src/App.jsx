@@ -5,7 +5,7 @@ import Content from './components/content'
 function App() {
 
   return (
-    <div className=' w-full m-0 h-fit'>
+    <div className='    w-full m-0 h-fit'>
       <Nav/>
       <Header/>
       <Content/>
