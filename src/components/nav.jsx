@@ -1,16 +1,11 @@
 import React from 'react'
 import { useState  ,useRef} from 'react'
-import { useSpring, animated } from 'react-spring';
 
 function Nav() {
     const [active, setActive] = useState(false)
     const [activeLink, setActiveLink] = useState('About');
     const ref = useRef(null);
-    const spring = useSpring({
-        from: { transform: 'translateX(0px)' },
-        to: { transform: `translateX(${ref.current ? ref.current.offsetLeft : 0}px)` },
-        config: { tension: 250, friction: 20 },
-      });
+    
 
   return (
         <div
