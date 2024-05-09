@@ -1,4 +1,7 @@
 import React from 'react'
+import { motion } from "framer-motion"
+const list = { hidden: { opacity: 0 } }
+const item = { hidden: { x: -10, opacity: 0 } }
 
 function header() {
   return (
@@ -19,6 +22,13 @@ function header() {
     >
         I build websites and web applications , love to learn new things and solve problems
     </p>
+    {/* <motion.div className='h-10 w-10 bg-black' 
+    
+    initial={{ opacity: 0 }}
+     whileInView={{ opacity: 1 }} 
+     drag='x'        >
+            hi
+        </motion.div> */}
 </div>
   )
 }

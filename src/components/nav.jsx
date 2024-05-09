@@ -1,10 +1,9 @@
 import React from 'react'
-import { useState  ,useRef} from 'react'
+import { useState  } from 'react'
 
 function Nav() {
     const [active, setActive] = useState(false)
     const [activeLink, setActiveLink] = useState('About');
-    const ref = useRef(null);
     
 
   return (
@@ -13,6 +12,7 @@ function Nav() {
         >
          <nav className=' text-center p-1.5 w-[280px]   bg-indigo-100  rounded-full    '>
             <ul className='flex font-rubik  text-indigo-600 justify-center items-center space-x-4 '>
+            
             <li className={`px-3 py-0.5 rounded-full ${activeLink === 'About' ? 'bg-white' : ''}`} onClick={() => setActiveLink('About')}>
             About
             </li>
@@ -61,6 +61,7 @@ function Nav() {
             
             
         </div>
+       
         </div>
  
   )
