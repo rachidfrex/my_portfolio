@@ -11,8 +11,9 @@ function Nav() {
         <div
         className='flex justify-center items-center py-5'
         >
-         <nav className=' text-center p-1.5 w-[280px]   bg-indigo-100  rounded-full    '>
-            <ul className='flex font-rubik  text-indigo-600 justify-center items-center space-x-4 '>
+         <nav className=' mx-2 text-center p-1.5 w-full sm:w-[280px]   bg-indigo-100  rounded-full    '>
+            <ul className=' pl-4 flex font-rubik w-[280px]   text-indigo-600 sm:justify-center justify-start items-center space-x-4 '>
+            <li className='text-xl font-poetsen text-indigo-600' > Frex </li>
             
             <li className={`px-3 py-0.5 rounded-full ${activeLink === 'About' ? 'bg-white' : ''}`} onClick={() => setActiveLink('About')}>
             About
@@ -25,7 +26,7 @@ function Nav() {
         </li>
             </ul>
         </nav>
-        <div className=' absolute left-[5%] bg-indigo-100 rounded-full w-16 h-16 flex flex-col gap-5 items-center justify-center '>
+        <div className=' hidden absolute left-[5%] bg-indigo-100 rounded-full w-16 h-16 sm:flex flex-col gap-5 items-center justify-center '>
             <h1
             className='text-xl font-poetsen text-indigo-600'
             >
