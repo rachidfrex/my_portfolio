@@ -29,10 +29,10 @@ function Content() {
       </div>
       <div className="grid grid-cols-2 gap-5  ">
        <div 
-       className="ring-1 dark:ring-white/10 w-[310px] gap-5 relative  ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
+       className="ring-1 dark:ring-white/10 w-[310px] gap-5    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
        >
        <h3 className=" font-semibold text-violet-600  text-3xl w-full ">what i do ?</h3>
-        <p className="text-violet-600 flex absolute  rounded-2xl  rounded-t bottom-[3%] left-[3%] right-[3%] justify-center items-center text-sm text-justify bg-white p-2 w-[292px] ">i build websites and web applications , i love to learn new things and solve problems
+        <p className="text-violet-600 flex   justify-center items-center text-sm text-justify ">i build websites and web applications , i love to learn new things and solve problems
         </p>
        </div>
        <div
