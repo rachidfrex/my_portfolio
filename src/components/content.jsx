@@ -10,7 +10,7 @@ function Content() {
   return (
     <div className="flex flex-col gap-5 items-center  justify-center mt-20  ">
        
-      <div className="flex flex-row gap-8  justify-center items-center   bg-violet-100  w-[640px] h-[300px]  rounded-lg px-4 py-5">
+      <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 justify-center items-center   bg-violet-100  md:w-[640px] h-full  rounded-3xl px-4 py-5">
       <div className="flex justify-start items-start flex-col gap-2">
       <div className="bg-white  w-10 h-10 flex mb-5 justify-center items-center rounded-md">
         <svg className="text-violet-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
@@ -18,9 +18,9 @@ function Content() {
             <path d="M7 13L14.5 5.50003M18 2L16.5 3.5M22 6.00003L19 9M11 16L14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
         </div> 
-        <h3 className="text-xl font-semibold text-violet-600">who am I ?</h3>
+        <h3 className="text-3xl font-semibold text-violet-600">who am I ?</h3>
        
-        <p className="text-violet-600 text-sm text-justify">my name is rachid , i live in morocco , i'm a full stack developer , i love to learn new things and solve problems
+        <p className="text-violet-600 bg-white p-2 rounded-lg text-sm text-justify">my name is rachid , i live in morocco , i'm a full stack developer , i love to learn new things and solve problems
         </p>
       </div>
         <div className="bg-white p-2 pb-5 rounded-md  ">
@@ -29,25 +29,27 @@ function Content() {
       </div>
       <div className="grid grid-cols-2 gap-5  ">
        <div 
-       className="ring-1 dark:ring-white/10 w-[310px] gap-5   ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
+       className="ring-1 dark:ring-white/10 w-[310px] gap-5 relative  ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
        >
        <h3 className=" font-semibold text-violet-600  text-3xl w-full ">what i do ?</h3>
-        <p className="text-violet-600 text-sm text-justify">i build websites and web applications , i love to learn new things and solve problems
+        <p className="text-violet-600 flex absolute  rounded-2xl  rounded-t bottom-[3%] left-[3%] right-[3%] justify-center items-center text-sm text-justify bg-white p-2 w-[292px] ">i build websites and web applications , i love to learn new things and solve problems
         </p>
        </div>
        <div
-       className="ring-1 dark:ring-white/10 w-[310px] gap-5    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
+       className="ring-1 dark:ring-white/10 w-[310px] gap-1 relative   ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col  h-full bg-violet-100 "
        >
-        <h3 className=" font-semibold text-violet-600 text-3xl w-full"> front end  </h3>
+      <div className="p-8 flex flex-col gap-5">
+      <h3 className=" font-semibold text-violet-600 text-3xl w-full"> front end  </h3>
          <div className="flex gap-2 ">
           <img className="w-16 h-16 rounded-lg  border-4 border-white" src={reactjs} alt="" />
           <img className="w-16 h-16  rounded-lg border-4 border-white" src={tailwind} alt="" />
           <img className="w-16 h-16 rounded-lg border-4 border-white" src={javascript} alt="" />
           
          </div>
+      </div>
          {/* // make a paragraphe about  technologies that you use in front end development */}
          <p
-         className="text-violet-600 text-sm text-justify"
+         className="text-violet-600 flex   rounded-2xl  rounded-t mx-2 mb-2 justify-center items-center text-sm text-justify bg-white p-2 w-[292px] "
          >
             i use reactjs , tailwindcss and javascript to build websites and web applications
          </p>
