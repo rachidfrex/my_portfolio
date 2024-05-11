@@ -5,6 +5,7 @@ function Nav() {
     const [burger , setBurger] = useState(false)
     const [active, setActive] = useState(false)
     const [activeLink, setActiveLink] = useState('About');
+    const [showmenu , setShowMenu] = useState(false)
     useEffect(() => {
         const handleResize = () => {
           if (window.innerWidth < 640) {
@@ -25,22 +26,30 @@ function Nav() {
           window.removeEventListener('resize', handleResize);
         };
       }, []);
+    const handelshowmenu = () => {
+        setShowMenu(!showmenu)
+    }
 
     
 
   return (
         <div
-        className='flex justify-center items-center py-5'
+        className='flex  justify-center items-center py-5'
         >
-         <nav className=' mx-2 flex pl-5  sm:mx-0 text-center p-1.5 w-full  sm:w-[280px]   bg-indigo-100  rounded-full    '>
-         {
+            
+            {
                     burger ? (
-                        <h1 className='text-xl font-poetsen text-indigo-600 ' > Frex </h1>
+                        <button onClick={handelshowmenu}  className=' flex w-full justify-end items-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#000000" fill="none">
+                    <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                     </button>
                     ) : (
-                        null
-                    )
-                }
-            <ul className=' pl-4 sm:pl-0 flex font-rubik w-full   text-indigo-600 justify-center items-center space-x-4 '>
+                        <nav className='  hidden sm:block     text-center p-1.5   sm:w-[280px]   bg-indigo-100  rounded-full    '>
+         
+            <ul className='flex font-rubik w-full   text-indigo-600 justify-center items-center space-x-4 '>
                 
             
             <li className={`px-3 py-0.5 rounded-full ${activeLink === 'About' ? 'bg-white' : ''}`} onClick={() => setActiveLink('About')}>
@@ -54,7 +63,11 @@ function Nav() {
         </li>
             </ul>
         </nav>
-        <div className=' hidden absolute left-[5%] bg-indigo-100 rounded-full w-16 h-16 sm:flex flex-col gap-5 items-center justify-center '>
+                    )
+                }
+            
+         
+        <div className='  absolute left-[5%] bg-indigo-100 rounded-full w-16  sm:h-16 flex flex-col gap-5 items-center justify-center '>
             <h1
             className='text-xl font-poetsen text-indigo-600'
             >
@@ -62,7 +75,7 @@ function Nav() {
             </h1>
             
         </div>
-        <div className='flex  absolute right-[5%] justify-center items-center p-2 gap-2'>
+        <div className='flex  mx-5 absolute right-[5%] justify-center items-center p-2 gap-2'>
             {active ? (
                 <button className='flex justify-center items-center cursor-pointer bg-indigo-100 p-1 rounded-full' 
                 onClick={() => setActive(!active)}
