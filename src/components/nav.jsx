@@ -32,7 +32,7 @@ function Nav() {
         <div
         className='flex justify-center items-center py-5'
         >
-         <nav className=' mx-2 flex px-5 gap-5 sm:mx-0 text-center p-1.5 w-full  sm:w-[280px]   bg-indigo-100  rounded-full    '>
+         <nav className=' mx-2 flex pl-5  sm:mx-0 text-center p-1.5 w-full  sm:w-[280px]   bg-indigo-100  rounded-full    '>
          {
                     burger ? (
                         <h1 className='text-xl font-poetsen text-indigo-600 ' > Frex </h1>
