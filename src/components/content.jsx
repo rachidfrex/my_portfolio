@@ -10,7 +10,7 @@ function Content() {
   return (
     <div className="flex flex-col gap-5 items-center  justify-center mt-20  ">
        
-      <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 justify-center items-center   bg-violet-100  md:w-[640px] h-full  rounded-3xl px-4 py-5">
+      <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 backdrop-blur-md justify-center items-center   bg-violet-100  md:w-[640px] h-full  rounded-3xl px-4 py-5">
       <div className="flex justify-start items-start flex-col gap-2">
       <div className="bg-white  w-10 h-10 flex mb-5 justify-center items-center rounded-md">
         <svg className="text-violet-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
@@ -27,7 +27,7 @@ function Content() {
             <img className="w-auto object-cover rounded-md overflow-hidden " src={man} alt="" />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-5  ">
+      <div className="grid  md:grid-cols-2 grid-col-1 gap-5  ">
        <div 
        className="ring-1 dark:ring-white/10 w-[310px] gap-5    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
        >
@@ -36,9 +36,9 @@ function Content() {
         </p>
        </div>
        <div
-       className="ring-1 dark:ring-white/10 w-[310px] gap-1 relative   ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col  h-full bg-violet-100 "
+       className="ring-1  dark:ring-white/10 w-[310px] gap-5 p-8    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col  h-full bg-violet-100 "
        >
-      <div className="p-8 flex flex-col gap-5">
+      
       <h3 className=" font-semibold text-violet-600 text-3xl w-full"> front end  </h3>
          <div className="flex gap-2 ">
           <img className="w-16 h-16 rounded-lg  border-4 border-white" src={reactjs} alt="" />
@@ -46,10 +46,10 @@ function Content() {
           <img className="w-16 h-16 rounded-lg border-4 border-white" src={javascript} alt="" />
           
          </div>
-      </div>
+      
          {/* // make a paragraphe about  technologies that you use in front end development */}
          <p
-         className="text-violet-600 flex   rounded-2xl  rounded-t mx-2 mb-2 justify-center items-center text-sm text-justify bg-white p-2 w-[292px] "
+         className="text-violet-600 flex   justify-center items-center text-sm text-justify  "
          >
             i use reactjs , tailwindcss and javascript to build websites and web applications
          </p>
@@ -83,7 +83,7 @@ function Content() {
         >
           Find me on
         </h3>
-        <div class="grid mt-4 grid-cols-4 md:grid-cols-8 lg:grid-cols-4 gap-y-4 gap-4 justify-center w-full">
+        <div class="grid mt-4  grid-cols-4  gap-y-4 gap-4 justify-center w-full">
           <a
             href="#_"
             className="flex items-center justify-center aspect-square shadow-xl hover:bg-violet-700 dark:hover:bg-violet-500 bg-violet-500 dark:bg-violet-700 ring-1 ring-violet-500/5 rounded-lg hover:ring-slate-zinc-200/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
