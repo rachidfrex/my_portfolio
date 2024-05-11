@@ -10,8 +10,10 @@ function Nav() {
         const handleResize = () => {
           if (window.innerWidth < 640) {
             setBurger(true);
+
           } else {
             setBurger(false);
+            setShowMenu(false)
           }
         };
     
@@ -39,7 +41,7 @@ function Nav() {
             
             {
                     burger ? (
-                        <button  onClick={handelshowmenu}  className='  flex w-full justify-end items-center'>
+                        <button  onClick={handelshowmenu}  className=' pr-5 flex w-full justify-end items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#000000" fill="none">
                     <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -100,7 +102,7 @@ function Nav() {
             </h1>
             
         </div>
-        <div className='flex  mx-5 absolute right-[5%] justify-center items-center p-2 gap-2'>
+        <div className='flex  mr-10 sm:mr-auto absolute right-[5%] justify-center items-center p-2 gap-2'>
             {active ? (
                 <button className='flex justify-center items-center cursor-pointer bg-indigo-100 p-1 rounded-full' 
                 onClick={() => setActive(!active)}
