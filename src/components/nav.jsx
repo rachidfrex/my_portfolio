@@ -39,13 +39,16 @@ function Nav() {
             
             {
                     burger ? (
-                        <button onClick={handelshowmenu}  className=' flex w-full justify-end items-center'>
+                        <button  onClick={handelshowmenu}  className='  flex w-full justify-end items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#000000" fill="none">
                     <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                      </svg>
                      </button>
+                    
+                     
+                        
                     ) : (
                         <nav className='  hidden sm:block     text-center p-1.5   sm:w-[280px]   bg-indigo-100  rounded-full    '>
          
@@ -65,6 +68,28 @@ function Nav() {
         </nav>
                     )
                 }
+                
+                {
+                    showmenu ? (
+                        <nav className=' absolute   flex flex-row  w-full   top-16 bg-violet-100     '>
+                          
+                            <ul className='  my-3 pl-5 flex flex-col w-full text-center justify-start items-start  space-y-5'>
+                                <li className={`px-3 py-1 w-full rounded-full ${activeLink === 'About' ? 'bg-white' : ''}`} onClick={() => setActiveLink('About')}>
+                                About
+                                </li>
+                                <li className={`px-3 py-1 w-full rounded-full ${activeLink === 'Project' ? 'bg-white' : ''}`}onClick={() => setActiveLink('Project')} >
+                                Project
+                                </li>
+                                <li className={`px-3 py-1 w-full rounded-full ${activeLink === 'Contact' ? 'bg-white' : ''}`} onClick={() => setActiveLink('Contact')}>
+                                Contact
+                                </li>
+                            </ul>
+                        </nav>
+                    ) : (
+                        ''
+                    )
+                }
+                
             
          
         <div className='  absolute left-[5%] bg-indigo-100 rounded-full w-16  sm:h-16 flex flex-col gap-5 items-center justify-center '>
