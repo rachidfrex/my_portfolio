@@ -1,19 +1,47 @@
 import React from 'react'
-import { useState  } from 'react'
+import { useState , useEffect } from 'react'
 
 function Nav() {
     const [burger , setBurger] = useState(false)
     const [active, setActive] = useState(false)
     const [activeLink, setActiveLink] = useState('About');
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth < 640) {
+            setBurger(true);
+          } else {
+            setBurger(false);
+          }
+        };
+    
+        // Call the handleResize function initially to set the state correctly when the component mounts
+        handleResize();
+    
+        // Attach the event listener
+        window.addEventListener('resize', handleResize);
+    
+        // Clean up the event listener when the component unmounts
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+
     
 
   return (
         <div
         className='flex justify-center items-center py-5'
         >
-         <nav className=' mx-2 text-center p-1.5 w-full sm:w-[280px]   bg-indigo-100  rounded-full    '>
-            <ul className=' pl-4 flex font-rubik w-[280px]   text-indigo-600 sm:justify-center justify-start items-center space-x-4 '>
-            <li className='text-xl font-poetsen text-indigo-600' > Frex </li>
+         <nav className=' mx-2 flex px-5 gap-5 sm:mx-0 text-center p-1.5 w-full  sm:w-[280px]   bg-indigo-100  rounded-full    '>
+         {
+                    burger ? (
+                        <h1 className='text-xl font-poetsen text-indigo-600 ' > Frex </h1>
+                    ) : (
+                        null
+                    )
+                }
+            <ul className=' pl-4 sm:pl-0 flex font-rubik w-full   text-indigo-600 justify-center items-center space-x-4 '>
+                
             
             <li className={`px-3 py-0.5 rounded-full ${activeLink === 'About' ? 'bg-white' : ''}`} onClick={() => setActiveLink('About')}>
             About
