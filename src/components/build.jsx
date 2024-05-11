@@ -20,7 +20,7 @@ function Build() {
         something 
         </h1>
         <h1
-        className='ml-[30%] font-poetsen text-6xl md:text-8xl font-semibold text-indigo-600'
+        className='ml-[20%] sm:ml-[30%] font-poetsen text-6xl md:text-8xl font-semibold text-indigo-600'
         >
         together
         </h1>
