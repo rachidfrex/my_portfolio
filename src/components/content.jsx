@@ -27,16 +27,17 @@ function Content() {
             <img className="w-auto object-cover rounded-md overflow-hidden " src={man} alt="" />
         </div>
       </div>
-      <div className="grid  md:grid-cols-2 grid-col-1 gap-5  ">
+      {/* this is the 4 card */}
+      <div className="grid  sm:grid-cols-2 grid-col-1 gap-5  ">
        <div 
-       className="ring-1 dark:ring-white/10 w-[310px] gap-5    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
+       className="ring-1 dark:ring-white/10 mx-5 sm:mx-0 sm:w-[310px] gap-5    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
        >
        <h3 className=" font-semibold text-violet-600  text-3xl w-full ">what i do ?</h3>
         <p className="text-violet-600 flex   justify-center items-center text-sm text-justify ">i build websites and web applications , i love to learn new things and solve problems
         </p>
        </div>
        <div
-       className="ring-1  dark:ring-white/10 w-[310px] gap-5 p-8    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col  h-full bg-violet-100 "
+       className="ring-1  dark:ring-white/10 mx-5 sm:mx-0 sm:w-[310px] gap-5 p-8    ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col  h-full bg-violet-100 "
        >
       
       <h3 className=" font-semibold text-violet-600 text-3xl w-full"> front end  </h3>
@@ -56,7 +57,7 @@ function Content() {
        </div>
        {/* // now in the back ebnd section you can add the technologies that you use in the back end development like laravel post man and mysql */}
        <div
-       className="ring-1 dark:ring-white/10 w-[310px] gap-5     ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
+       className="ring-1 dark:ring-white/10 mx-5 sm:mx-0 sm:w-[310px] gap-5     ring-zinc-200/5 rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
         >
         <h3 className="text-3xl w-full font-semibold text-violet-600"> back end </h3>
           <div className="flex gap-2 ">
@@ -75,7 +76,7 @@ function Content() {
       </div>
       <div
       // className="bg-violet-100 p-5 rounded-lg  w-[310px] h-[200px] flex flex-col gap-2 justify-start items-center"
-      className="ring-1 dark:ring-white/10 ring-zinc-200/5 w-[310px]   rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
+      className="ring-1 dark:ring-white/10 ring-zinc-200/5 mx-5 sm:mx-0 sm:w-[310px]  rounded-3xl justify-between shadow-sm tems-center flex flex-col p-8 h-full bg-violet-100 "
       
       >
         <h3
