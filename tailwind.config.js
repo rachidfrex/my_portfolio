@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'poetsen': ['Poetsen One'],
-        'rubik': ['Rubik'],
+        'rubik': ['Poppins'],
 
 
       },

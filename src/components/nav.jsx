@@ -36,7 +36,7 @@ function Nav() {
 
   return (
         <div
-        className='flex  justify-center items-center py-5'
+        className='flex z-10 fixed top-0 w-full max-w-7xl bg-white/5 backdrop-blur-sm p-2 justify-center items-center py-5'
         >
             
             {
