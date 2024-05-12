@@ -7,12 +7,18 @@ import Build from './components/build'
 function App() {
 
   return (
-    <div className=' hero   w-full m-0 h-fit'>
+    <div className=' hero    w-full m-0 h-fit'>
       {/* <Nab/> */}
+      <div className='   '>
       <Nav/>
+      
       <Header/>
+      
       <Content/>
+     
       <Build/>
+      </div>
+      
     </div>
       
 
