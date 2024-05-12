@@ -36,7 +36,7 @@ function Nav() {
 
   return (
         <div
-        className='flex z-10 fixed top-0 w-full max-w-7xl bg-white/5 backdrop-blur-sm p-2 justify-center items-center py-5'
+        className='flex z-10 fixed top-0 w-full md:max-w-7xl bg-white/5 backdrop-blur-sm p-2 justify-center items-center py-5'
         >
             
             {
@@ -52,7 +52,7 @@ function Nav() {
                      
                         
                     ) : (
-                        <nav className='  hidden sm:block     text-center p-1.5   sm:w-[280px]   bg-indigo-100  rounded-full    '>
+                        <nav className='   hidden sm:flex justify-center items-center     text-center p-1.5   sm:w-[290px]   bg-indigo-100  rounded-full    '>
          
             <ul className='flex font-rubik w-full   text-indigo-600 justify-center items-center space-x-4 '>
                 
