@@ -37,7 +37,7 @@ function Nav() {
   return (
     
         <div
-        className='flex z-10 fixed md:max-w-7xl top-0 w-full bg-white/5 backdrop-blur-sm sm:p-2 justify-center items-center py-5'
+        className='flex z-10 fixed md:max-w-7xl top-5 w-full bg-white/5 backdrop-blur-sm sm:p-2 justify-center items-center '
         >
             
             {

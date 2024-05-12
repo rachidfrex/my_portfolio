@@ -234,8 +234,17 @@ function Content() {
             >
           </a>
         </div>
+        
 
           
+      </div>
+      <div className="flex flex-col items-center text-white justify-center">
+      <div className="card-wrapper  w-full h-[200px] ">
+            <div className="card-content h-full flex items-center  justify-center text-xs">
+              this the content
+            </div>
+         
+      </div>
       </div>
      
     </div>
