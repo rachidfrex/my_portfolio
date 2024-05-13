@@ -52,7 +52,7 @@ function Nav() {
   return (
     
         <div
-        className='flex z-10 fixed md:max-w-7xl top-5 w-full  sm:p-2 justify-center items-center '
+        className='flex z-50 fixed md:max-w-7xl top-5 w-full  sm:p-2 justify-center items-center '
         >
             
             {

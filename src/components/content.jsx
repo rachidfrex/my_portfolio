@@ -11,7 +11,7 @@ function Content() {
  
   return (
     <div className="flex flex-col gap-5 items-center   justify-center mt-20  ">
-      <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 backdrop-blur-md justify-center items-center   bg-violet-100  md:w-[750px] h-full   rounded-xl px-4 py-5">
+      <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 backdrop-blur-md justify-center items-center   bg-violet-100 dark:bg-gradient-to-b  dark:from-violet-900   dark:to-slate-900  md:w-[750px] h-full   rounded-xl px-4 py-5">
       <div className="flex justify-start items-start flex-col gap-2">
       <div className="bg-white  w-10 h-10 flex mb-5 justify-center items-center rounded-md">
         <svg className="text-violet-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
@@ -19,9 +19,9 @@ function Content() {
             <path d="M7 13L14.5 5.50003M18 2L16.5 3.5M22 6.00003L19 9M11 16L14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
         </div> 
-        <h3 className="text-3xl font-semibold text-violet-600">who am I ?</h3>
+        <h3 className="text-3xl font-semibold text-violet-600 dark:text-white ">who am I ?</h3>
        
-        <p className="text-violet-600 bg-white p-2 rounded-lg text-sm ">my name is rachid , i live in morocco , i'm a full stack developer , i love to learn new things and solve problems
+        <p className="text-violet-600 bg-white dark:bg-violet-800 dark:text-white  p-2 rounded-lg text-sm ">my name is rachid , i live in morocco , i'm a full stack developer , i love to learn new things and solve problems
         </p>
       </div>
         <div className="bg-white p-2 pb-5 rounded-md  ">
@@ -29,24 +29,31 @@ function Content() {
         </div>
       </div>
       {/* this is the 4 card */}
+      
       <div className="grid sm:mx-5 sm:grid-cols-2 grid-col-1 gap-5  ">
+      <div className="card-wrapper  w-full">
        <div 
-       className=" mx-5 sm:mx-0 md:w-[365px] gap-5  md:mx-0   rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
+       className=" card-content  md:w-[363px]  mx-5 sm:mx-0  gap-5  md:mx-0   rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
        >
-       <h3 className=" font-semibold text-violet-600  text-3xl w-full ">what i do ?</h3>
+       <h3 className=" font-semibold text-violet-600 dark:text-white  text-3xl w-full ">what i do ?</h3>
        <button
        className="bg-violet-500 text-white p-2 rounded-lg w-full"
        >
         download cv
        </button>
-        <p className="text-violet-600 flex   justify-center items-center text-sm  ">i build websites and web applications , i love to learn new things and solve problems
+        <p className="text-violet-600 dark:text-white flex   justify-center items-center text-sm  ">i build websites and web applications , i love to learn new things and solve problems
         </p>
+       
        </div>
+        </div>
+       
+       <div className="card-wrapper  w-full">
+
        <div
-       className=" mx-5 sm:mx-0 md:w-[365px] gap-5 p-8  md:mx-0  rounded-xl justify-between shadow-sm  flex flex-col  h-full bg-violet-100 "
+       className=" card-content  md:w-[363px]  mx-5 sm:mx-0  gap-5 p-8  md:mx-0  rounded-xl justify-between shadow-sm  flex flex-col  h-full bg-violet-100 "
        >
       
-      <h3 className=" font-semibold text-violet-600 text-3xl w-full"> front end  </h3>
+      <h3 className=" font-semibold text-violet-600 dark:text-white dark:text-whit text-3xl w-full"> front end  </h3>
          <div className="flex gap-2 ">
         
           <img className="w-16 h-16 rounded-lg  border-4 border-white" src={reactjs} alt="" />
@@ -57,16 +64,18 @@ function Content() {
       
          {/* // make a paragraphe about  technologies that you use in front end development */}
          <p
-         className="text-violet-600 flex   justify-center items-center text-sm   "
+         className="text-violet-600 dark:text-white flex   justify-center items-center text-sm   "
          >
             i use reactjs , tailwindcss and javascript to build websites and web applications
          </p>
        </div>
+       </div>
        {/* // now in the back ebnd section you can add the technologies that you use in the back end development like laravel post man and mysql */}
+       <div className="card-wrapper  ">
        <div
-       className="  mx-5  md:w-[365px] gap-5 sm:mx-0      rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
+       className=" card-content md:w-[363px]   mx-5   gap-5 sm:mx-0      rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
         >
-        <h3 className="text-3xl w-full font-semibold text-violet-600"> back end </h3>
+        <h3 className="text-3xl w-full font-semibold text-violet-600 dark:text-white"> back end </h3>
           <div className="flex gap-2 ">
           <img className="w-16 h-16 rounded-lg" src={laravel} alt="" />
           <img className="w-16 h-16 rounded-lg " src={ postman} alt="" />
@@ -74,17 +83,19 @@ function Content() {
             
           </div>
           <p
-          className="text-violet-600 text-sm "
+          className="text-violet-600 dark:text-white text-sm "
           >
             i use laravel , postman and mysql to build websites and web applications
           </p>
 
 
       </div>
+      </div>
+      {/* // this is the last card */}
       <div className="card-wrapper  w-full">
       <div
       // className="bg-violet-100 p-5 rounded-lg  w-[310px] h-[200px] flex flex-col gap-2 justify-start items-center"
-      className="  card-content mx-5 sm:mx-0 md:w-[363px]   rounded-xl justify-between shadow-sm     flex flex-col p-8 h-full bg-violet-100 "
+      className="  card-content  md:w-[363px] mx-5 sm:mx-0   rounded-xl justify-between shadow-sm     flex flex-col p-8 h-full bg-violet-100 "
       
       >
         <h3
@@ -247,14 +258,14 @@ function Content() {
           
       </div>
       </div>
-      <div className="flex flex-col items-center text-white justify-center">
+      {/* <div className="flex flex-col items-center text-white justify-center">
       <div className="card-wrapper  w-full h-[200px] ">
             <div className="card-content h-full flex items-center  justify-center text-xs">
               this the content
             </div>
          
       </div>
-      </div>
+      </div> */}
      
     </div>
     </div>
