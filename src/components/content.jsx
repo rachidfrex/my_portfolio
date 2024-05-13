@@ -53,7 +53,7 @@ function Content() {
        className=" card-content  md:w-[363px]  gap-5 p-8  md:mx-0  rounded-xl justify-between shadow-sm  flex flex-col  h-full bg-violet-100 "
        >
       
-      <h3 className=" font-semibold text-violet-600 dark:text-white dark:text-whit text-3xl w-full"> front end  </h3>
+      <h3 className=" font-semibold text-violet-600 dark:text-white  text-3xl w-full"> front end  </h3>
          <div className="flex gap-2 ">
         
           <img className="w-16 h-16 rounded-lg  border-4 border-white" src={reactjs} alt="" />
