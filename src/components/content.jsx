@@ -112,7 +112,7 @@ function Content() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-violet-500 dark:text-white group-hover text-violet-500:dark:text-white/50" 
+              class="icon icon-tabler icon-tabler-brand-github h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50"
               viewBox="0 0 24 24"
               stroke-width="0.8"
               stroke="currentColor"
