@@ -31,9 +31,9 @@ function Content() {
       {/* this is the 4 card */}
       
       <div className="grid sm:mx-5 sm:grid-cols-2 grid-col-1 gap-5  ">
-      <div className="card-wrapper  w-full">
+      <div className="card-wrapper  mx-5 sm:mx-0">
        <div 
-       className=" card-content  md:w-[363px]  mx-5 sm:mx-0  gap-5  md:mx-0   rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
+       className=" card-content  md:w-[363px]    gap-5  md:mx-0   rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
        >
        <h3 className=" font-semibold text-violet-600 dark:text-white  text-3xl w-full ">what i do ?</h3>
        <button
@@ -47,10 +47,10 @@ function Content() {
        </div>
         </div>
        
-       <div className="card-wrapper  w-full">
+       <div className="card-wrapper   mx-5 sm:mx-0">
 
        <div
-       className=" card-content  md:w-[363px]  mx-5 sm:mx-0  gap-5 p-8  md:mx-0  rounded-xl justify-between shadow-sm  flex flex-col  h-full bg-violet-100 "
+       className=" card-content  md:w-[363px]  gap-5 p-8  md:mx-0  rounded-xl justify-between shadow-sm  flex flex-col  h-full bg-violet-100 "
        >
       
       <h3 className=" font-semibold text-violet-600 dark:text-white dark:text-whit text-3xl w-full"> front end  </h3>
@@ -71,9 +71,9 @@ function Content() {
        </div>
        </div>
        {/* // now in the back ebnd section you can add the technologies that you use in the back end development like laravel post man and mysql */}
-       <div className="card-wrapper  ">
+       <div className="card-wrapper  mx-5 sm:mx-0  ">
        <div
-       className=" card-content md:w-[363px]   mx-5   gap-5 sm:mx-0      rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
+       className=" card-content md:w-[363px]      gap-5      rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
         >
         <h3 className="text-3xl w-full font-semibold text-violet-600 dark:text-white"> back end </h3>
           <div className="flex gap-2 ">
@@ -92,10 +92,11 @@ function Content() {
       </div>
       </div>
       {/* // this is the last card */}
-      <div className="card-wrapper  w-full">
+
+      <div className="card-wrapper  mx-5 sm:mx-0">
       <div
       // className="bg-violet-100 p-5 rounded-lg  w-[310px] h-[200px] flex flex-col gap-2 justify-start items-center"
-      className="  card-content  md:w-[363px] mx-5 sm:mx-0   rounded-xl justify-between shadow-sm     flex flex-col p-8 h-full bg-violet-100 "
+      className="  card-content w-full  md:w-[363px]    rounded-xl justify-between shadow-sm     flex flex-col p-8 h-full bg-violet-100 "
       
       >
         <h3
@@ -103,6 +104,7 @@ function Content() {
         >
           Find me on
         </h3>
+       
         <div class="grid mt-4  grid-cols-4  gap-y-4 gap-4 justify-center w-full">
           <a
             href="#_"
@@ -253,13 +255,15 @@ function Content() {
             >
           </a>
         </div>
+       
         
 
           
       </div>
       </div>
-      {/* <div className="flex flex-col items-center text-white justify-center">
-      <div className="card-wrapper  w-full h-[200px] ">
+      
+      {/* <div  className="flex flex-col mx-5 items-center text-white justify-center">
+      <div className="card-wrapper   w-full h-[200px] ">
             <div className="card-content h-full flex items-center  justify-center text-xs">
               this the content
             </div>
