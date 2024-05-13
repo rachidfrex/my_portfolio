@@ -6,10 +6,11 @@ import javascript from "../assets/JavaScript.png";
 import laravel from "../assets/laravel.png";
 import postman from "../assets/postman.png";
 import mysql from "../assets/sql.png";
+
 function Content() {
+ 
   return (
-    <div className="flex flex-col gap-5 items-center  justify-center mt-20  ">
-       
+    <div className="flex flex-col gap-5 items-center   justify-center mt-20  ">
       <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 backdrop-blur-md justify-center items-center   bg-violet-100  md:w-[750px] h-full   rounded-xl px-4 py-5">
       <div className="flex justify-start items-start flex-col gap-2">
       <div className="bg-white  w-10 h-10 flex mb-5 justify-center items-center rounded-md">
@@ -80,13 +81,14 @@ function Content() {
 
 
       </div>
+      <div className="card-wrapper  w-full">
       <div
       // className="bg-violet-100 p-5 rounded-lg  w-[310px] h-[200px] flex flex-col gap-2 justify-start items-center"
-      className="  mx-5 sm:mx-0 md:w-[365px]   rounded-xl justify-between shadow-sm     flex flex-col p-8 h-full bg-violet-100 "
+      className="  card-content mx-5 sm:mx-0 md:w-[363px]   rounded-xl justify-between shadow-sm     flex flex-col p-8 h-full bg-violet-100 "
       
       >
         <h3
-        className="text-3xl w-full font-semibold text-violet-600"
+        className="text-3xl w-full font-semibold text-violet-600 dark:text-white"
         >
           Find me on
         </h3>
@@ -243,6 +245,7 @@ function Content() {
         
 
           
+      </div>
       </div>
       <div className="flex flex-col items-center text-white justify-center">
       <div className="card-wrapper  w-full h-[200px] ">

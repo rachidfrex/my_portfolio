@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -17,7 +18,7 @@ export default {
         'rubik': ['Poppins'],
       },
       animation: {
-        'border-spin': 'border-spin 7s linear infinite',
+        'border-spin': 'border-spin 5s linear infinite',
       },
     },
   },
