@@ -6,6 +6,8 @@ import javascript from "../assets/JavaScript.png";
 import laravel from "../assets/laravel.png";
 import postman from "../assets/postman.png";
 import mysql from "../assets/sql.png";
+import { motion } from 'framer-motion';
+
 
 function Content() {
  
