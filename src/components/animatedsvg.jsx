@@ -33,24 +33,25 @@ const AnimatedSVG = () => {
   }, []);
 
   return (
-    <svg id="animatedSVG" width="800" height="600" viewBox="0 0 800 600">
+    <svg id="animatedSVG" width="800" height="300" viewBox="0 0 800 300">
       <path
         ref={leftLineRef}
-        d="M100 100 H 300 V 500"
+        
+        d="M350 50 H 70 V 150"
         fill="transparent"
         stroke="violet"
         strokeWidth="2"
       />
       <path
         ref={middleLineRef}
-        d="M400 100 V 500"
+        d="M400 50 V 150"
         fill="transparent"
         stroke="violet"
         strokeWidth="2"
       />
       <path
         ref={rightLineRef}
-        d="M700 500 H 500 V 100"
+        d="M450 50 H 730 V 150"
         fill="transparent"
         stroke="violet"
         strokeWidth="2"
