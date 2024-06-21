@@ -13,7 +13,7 @@ const Card = ({ image, tags, title }) => {
           </span>
         ))}
       </div>
-      <h1 className='text-xl m-4 font-rubik flex justify-start items-center font-semibold text-indigo-600 dark:text-white'>
+      <h1 className=' m-4 font-rubik flex justify-start items-center font-semibold text-indigo-600 dark:text-white'>
         {title}
       </h1>
     </div>
