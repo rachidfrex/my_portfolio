@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
 const AnimatedSVG = () => {
@@ -7,6 +7,25 @@ const AnimatedSVG = () => {
   const middleLineRef = useRef(null);
   const rightLineRef = useRef(null);
   const animationRef = useRef(null);
+  const [svgWidth, setSvgWidth] = useState(800);
+
+  useEffect(() => {
+    const updateSvgWidth = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 1024) {
+        setSvgWidth(800); // Desktop
+      } else if (screenWidth >= 768) {
+        setSvgWidth(600); // Tablet
+      } else {
+        setSvgWidth(400); // Mobile
+      }
+    };
+
+    updateSvgWidth();
+    window.addEventListener('resize', updateSvgWidth);
+
+    return () => window.removeEventListener('resize', updateSvgWidth);
+  }, []);
 
   useEffect(() => {
     const svg = svgRef.current;
@@ -33,11 +52,11 @@ const AnimatedSVG = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setupAnimation(); // Reset the animation
+          setupAnimation();
           animationRef.current.play();
         }
       });
-    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+    }, { threshold: 0.1 });
 
     observer.observe(svg);
 
@@ -47,33 +66,32 @@ const AnimatedSVG = () => {
         animationRef.current.kill();
       }
     };
-  }, []);
+  }, [svgWidth]);
 
   return (
-    <svg ref={svgRef} id="animatedSVG" width="800" height="180" viewBox="0 0 800 100">
-    <path
-      ref={leftLineRef}
-      d="M350 50 H 100 Q 75 50 75 70 V 150"
-      fill="transparent"
-      stroke="violet"
-      strokeWidth="2"
-    />
-    <path
-      ref={middleLineRef}
-      d="M400 50 V 150"
-      fill="transparent"
-      stroke="violet"
-      strokeWidth="2"
-    />
-    <path
-      ref={rightLineRef}
-      d="M450 50 H 700 Q 725 50 725 70 V 150"
-      fill="transparent"
-      stroke="violet"
-      strokeWidth="2"
-    />
-  </svg>
-  
+    <svg ref={svgRef} id="animatedSVG" width={svgWidth} height="180" viewBox={`0 0 ${svgWidth} 100`}>
+      <path
+        ref={leftLineRef}
+        d={`M${svgWidth * 0.4375} 50 H ${svgWidth * 0.125} Q ${svgWidth * 0.09375} 50 ${svgWidth * 0.09375} 70 V 150`}
+        fill="transparent"
+        stroke="violet"
+        strokeWidth="2"
+      />
+      <path
+        ref={middleLineRef}
+        d={`M${svgWidth * 0.5} 50 V 150`}
+        fill="transparent"
+        stroke="violet"
+        strokeWidth="2"
+      />
+      <path
+        ref={rightLineRef}
+        d={`M${svgWidth * 0.5625} 50 H ${svgWidth * 0.875} Q ${svgWidth * 0.90625} 50 ${svgWidth * 0.90625} 70 V 150`}
+        fill="transparent"
+        stroke="violet"
+        strokeWidth="2"
+      />
+    </svg>
   );
 };
 
