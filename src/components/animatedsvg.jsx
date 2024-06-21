@@ -33,7 +33,7 @@ const AnimatedSVG = () => {
   }, []);
 
   return (
-    <svg id="animatedSVG" width="800" height="300" viewBox="0 0 800 300">
+    <svg id="animatedSVG" width="800" height="300" viewBox="0 0 800 200">
       <path
         ref={leftLineRef}
         
