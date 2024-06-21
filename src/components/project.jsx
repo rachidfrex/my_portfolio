@@ -1,5 +1,5 @@
 import React from "react";
-
+import AnimatedSVG from "./animatedsvg";
 function Project() {
     // the category of progmramation laguage of framwork used in  the project 
     const category =[
@@ -30,10 +30,11 @@ function Project() {
     ]
   return (
     <div className=" mt-5 mx-5 md:mt-20 flex flex-col justify-center items-center">
-       
+
       <h1 className="font-poetsen text-6xl md:text-3xl font-semibold text-indigo-600 dark:text-white">
         My Project
       </h1>
+      <AnimatedSVG />
       <div className="grid grid-cols-1   max-w-6xl md:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-5 md:mt-10">
         <div className="w-full ">
           <div className="h-[200px]   bg-violet-100 dark:bg-violet-800 rounded-2xl">
