@@ -6,13 +6,21 @@ import javascript from "../assets/JavaScript.png";
 import laravel from "../assets/laravel.png";
 import postman from "../assets/postman.png";
 import mysql from "../assets/sql.png";
-import { motion } from 'framer-motion';
+import LaserLine from './laserline';
+import Linelaser from "./linelaser";
+
 
 
 function Content() {
  
   return (
     <div className="flex flex-col gap-5 items-center   justify-center mt-20  ">
+      <LaserLine/>
+      <div className="flex justify-center items-center ">
+      <Linelaser/>
+      </div>
+      
+
       <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 backdrop-blur-md justify-center items-center   bg-violet-100 dark:bg-gradient-to-b  dark:from-violet-900   dark:to-slate-900  md:w-[750px] h-full   rounded-xl px-4 py-5">
       <div className="flex justify-start items-start flex-col gap-2">
       <div className="bg-white  w-10 h-10 flex mb-5 justify-center items-center rounded-md">
