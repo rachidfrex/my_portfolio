@@ -6,8 +6,6 @@ import javascript from "../assets/JavaScript.png";
 import laravel from "../assets/laravel.png";
 import postman from "../assets/postman.png";
 import mysql from "../assets/sql.png";
-import Linelaser from "./linelaser";
-
 
 
 function Content() {
@@ -15,7 +13,6 @@ function Content() {
   return (
     <div className="flex flex-col gap-5 items-center   justify-center mt-20  ">
       <div className="flex justify-center items-center ">
-      <Linelaser/>
       </div>
       
 

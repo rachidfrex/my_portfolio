@@ -23,10 +23,17 @@ const Linelaser = () => {
             <rect className="mask-rect" x="-50%" y="0" width="100%" height="400" fill="url(#gradient)" />
 
           </mask>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
         </defs>
-      <path d="M0 2C828.225 2 685.929 295 1440 295" stroke="yellow" stroke-width="4" mask="url(#gradient-mask)"/>
-      <path d="M0 164C530.184 164 889.809 311 1440 311" stroke="orange" stroke-width="4" mask="url(#gradient-mask)"/>
-      <path d="M0 398C786.273 398 603.71 327 1440 327" stroke="red" stroke-width="4" mask="url(#gradient-mask)"/>
+        <path d="M0 2C828.225 2 685.929 295 1440 295" stroke="violet" stroke-width="4" mask="url(#gradient-mask)" filter="url(#glow)"/>
+<path d="M0 164C530.184 164 889.809 311 1440 311" stroke="violet" stroke-width="4" mask="url(#gradient-mask)" filter="url(#glow)"/>
+<path d="M0 398C786.273 398 603.71 327 1440 327" stroke="violet" stroke-width="4" mask="url(#gradient-mask)" filter="url(#glow)"/>
       </svg>
       </div>
     );
