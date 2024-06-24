@@ -9,6 +9,7 @@ import mysql from "../assets/sql.png";
 import Linelaser from "./linelaser";
 
 
+import LaserLine from './laserline';
 
 function Content() {
  
