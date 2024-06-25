@@ -15,11 +15,14 @@ function Content() {
  
   return (
     <div className="flex flex-col gap-5 items-center   justify-center mt-20  ">
-      <HandwrittenText/>
+      <div className="flex justify-center items-center ">
+      </div>
+      
+
       <div className="flex flex-col md:flex-row gap-8 mx-5 md:mx-0 backdrop-blur-md justify-center items-center   bg-violet-100 dark:bg-gradient-to-b  dark:from-violet-900   dark:to-slate-900  md:w-[750px] h-full   rounded-xl px-4 py-5">
       <div className="flex justify-start items-start flex-col gap-2">
       <div className="bg-white  w-10 h-10 flex mb-5 justify-center items-center rounded-md">
-        <svg className="text-violet-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+      <svg className="text-violet-500" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
             <path d="M17 14.5C17 18.6421 13.6421 22 9.5 22C5.35786 22 2 18.6421 2 14.5C2 10.3579 5.35786 7 9.5 7C13.6421 7 17 10.3579 17 14.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
             <path d="M7 13L14.5 5.50003M18 2L16.5 3.5M22 6.00003L19 9M11 16L14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
