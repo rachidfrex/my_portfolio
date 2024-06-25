@@ -1,11 +1,22 @@
-<svg width="387" height="310" viewBox="0 0 387 310" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="255.5" y1="2.98525" x2="258.51" y2="308.985" stroke="#BFBFBF" stroke-width="3"/>
-<line x1="385.5" y1="3" x2="385.5" y2="309" stroke="#BFBFBF" stroke-width="3"/>
-<line x1="127.5" y1="3.0098" x2="125.5" y2="309.01" stroke="#BFBFBF" stroke-width="3"/>
-<line x1="1.5" y1="306" x2="1.5" y2="3" stroke="#BFBFBF" stroke-width="3"/>
-<line x1="3" y1="1.5" x2="384" y2="1.5" stroke="#C1C1C1" stroke-width="3"/>
-<line x1="1.99211" y1="103.505" x2="382.992" y2="101.5" stroke="#BFBFBF" stroke-width="3"/>
-<line x1="2.01181" y1="202.505" x2="383.012" y2="205.505" stroke="#BFBFBF" stroke-width="3"/>
-<line x1="2.00394" y1="306.505" x2="383.004" y2="307.505" stroke="#BFBFBF" stroke-width="3"/>
-<line x1="121" y1="309.505" x2="2" y2="309.505" stroke="white"/>
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="80" height="100" patternUnits="userSpaceOnUse">
+      <rect width="80" height="100" fill="none" stroke="#ccc" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#grid)" />
+  
+  <g stroke="#000" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+    <line x1="0" y1="600" x2="800" y2="600" />
+    <line x1="0" y1="700" x2="800" y2="700" />
+    <line x1="0" y1="800" x2="800" y2="800" />
+    <line x1="0" y1="900" x2="800" y2="900" />
+  </g>
 </svg>
+
