@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Linelaser2 = (size) => {
+const Linelaser2 = (size ,buttonColor)   => {
     return (
     <div className={`flex justify-center items-center relative w-[${size}]  `}>
             {/* back */}

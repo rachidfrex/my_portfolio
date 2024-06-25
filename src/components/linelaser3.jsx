@@ -16,11 +16,11 @@ const Linelaser3 = (size) => {
                 <line x1="121" y1="309.505" x2="2" y2="309.505" stroke="white"/>
             </svg>
             {/* front  */}
-            <svg className="absolute" width="100%" height="209" viewBox="0 0 264 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="absolute top-0 -right-[62px]" width="100%" height="209" viewBox="0 0 264 209" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="gradient"> 
                         <stop offset="0%" style={{stopColor: "white", stopOpacity: 0}} />
-                        <stop offset="0.8" style={{stopColor: "white", stopOpacity: 1}} />
+                        <stop offset="0.5" style={{stopColor: "white", stopOpacity: 1}} />
                         <stop offset="0.8" style={{stopColor: "white", stopOpacity: 0}} />
                     </linearGradient>
                     <mask id="gradient-mask">

@@ -22,7 +22,7 @@ const Card = ({ title, description, buttonLabel, status, children, icon , button
         }
         {status  && 
           <div className="flex items-center">
-            <span className={`block w-3 h-3 rounded-full ${status === 'Generating' ? 'bg-green-500' : 'bg-gray-500'} mr-2`}></span>
+            <span className={`block w-3 h-3 rounded-full ${status === 'Active' ? 'bg-gray-500' : 'bg-green-500'} mr-2`}></span>
             <span className="text-xs text-gray-300">{status}</span>
           </div>
           
@@ -30,7 +30,7 @@ const Card = ({ title, description, buttonLabel, status, children, icon , button
       </div>
       {/* laser line  */}
       <div className=' w-[540px] h-52 left-0  -bottom-16 opacity-25 -z-10 absolute'>
-      <Linelaser2 />
+      <Linelaser2 buttonColor={buttonColor} />
       </div>
     </div>
   );
