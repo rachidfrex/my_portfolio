@@ -4,6 +4,7 @@ import Linelaser3 from "../components/linelaser3";
 import Cards from "../components/cards";
 import deftar from "../assets/svg/deftar.svg";
 import AnimatedSVG from '../components/animatsvg';
+import GridPathAnimation from  '../components/gridpathanimation';
 
 
 const About = () => {
@@ -15,6 +16,8 @@ const About = () => {
             {/* <Linelaser3/> */}
             {/* <img src={deftar} alt="deftar" className='w-52 h-52'/> */}
            <AnimatedSVG/>
+           <div className='mt-10'></div>
+           <GridPathAnimation/>
         </div>
         </div>
       
