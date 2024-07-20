@@ -27,7 +27,7 @@ const Overlay = ({ project, onClose }) => {
       ref={overlayRef}
       className=" overflow-auto fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50"
     >
-      <div ref={contentRef} className="bg-white w-[95%] lg:w-2/3 max-w-7xl mt-32 mb-5  rounded-lg  relative">
+      <div ref={contentRef} className="bg-white w-[95%] lg:w-2/3 max-w-7xl md:mt-44 mb-5  rounded-lg  relative">
         <button
           onClick={handleClose}
           className="absolute top-1 z-50 right-1 bg-black rounded-full p-1"
@@ -44,7 +44,7 @@ const Overlay = ({ project, onClose }) => {
         >
           {project.data.discription}
         </p>
-          <img src={project.data.cover} alt={project.title} className="w-full h-[530px]  object-cover object-top rounded-lg" />
+          <img src={project.data.cover} alt={project.title} className="  w-full  h-[430px] md:h-[530px]  object-cover object-top " />
           {/* <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b  from-transparent to-black-100  opacity-50'></div> */}
       </div>
    
