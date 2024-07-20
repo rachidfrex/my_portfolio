@@ -8,6 +8,7 @@ import postman from "../assets/postman.png";
 import mysql from "../assets/sql.png";
 import { motion } from 'framer-motion';
 import HandwrittenText from "./handwrittentext";
+import cv from "../assets/cv-rachid-elhajouji.pdf";
 
 
 
@@ -44,11 +45,11 @@ function Content() {
        className=" card-content  md:w-[363px]    gap-5  md:mx-0   rounded-xl justify-between shadow-sm flex flex-col p-8 h-full bg-violet-100 "
        >
        <h3 className=" font-semibold text-violet-600 dark:text-white  text-3xl w-full ">what i do ?</h3>
-       <button
+       <a href={cv} download
        className="bg-violet-500 text-white p-2 rounded-lg w-full"
        >
         download cv
-       </button>
+       </a>
         <p className="text-violet-600 dark:text-white flex   justify-center items-center text-sm  ">i build websites and web applications , i love to learn new things and solve problems
         </p>
        
