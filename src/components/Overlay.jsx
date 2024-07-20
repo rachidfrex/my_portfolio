@@ -23,16 +23,18 @@ const Overlay = ({ project, onClose }) => {
       ref={overlayRef}
       className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50"
     >
-      <div ref={contentRef} className="bg-white p-5 rounded-lg w-4/5 lg:w-3/5 relative">
+      <div ref={contentRef} className="bg-white rounded-lg w-4/5 lg:w-3/5 relative">
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 bg-red-600 text-white rounded-full px-2 py-1"
+          className="absolute top-1 right-1 bg-red-600 text-white rounded-full px-2 py-1"
         >
-          Close
+          
         </button>
-        <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
+       <div className='p-5'>
+       <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
         <h2 className="mt-4 text-2xl font-bold">{project.title}</h2>
         <p className="mt-2">{project.details}</p>
+       </div>
       </div>
     </div>
   );
