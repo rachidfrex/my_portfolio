@@ -23,20 +23,20 @@ const Overlay = ({ project, onClose }) => {
       ref={overlayRef}
       className="fixed overflow-auto top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50"
     >
-      <div ref={contentRef} className="bg-white w-[100%] lg:w-2/3 max-w-7xl rounded-lg n relative">
+      <div ref={contentRef} className="bg-white w-[95%] lg:w-2/3 max-w-7xl rounded-lg n relative">
         <button
           onClick={handleClose}
           className="absolute top-1 z-50 right-1 bg-black rounded-full p-1"
         >
             <IoCloseSharp  color='white' size={19}/>
         </button>
-       <div className='px-10 py-5 flex flex-col gap-6 uppercase '>
-       <h2 className="mt-4 text-3xl  z-50 font-bold">{project.data.title}</h2>
-       <p className="mt-2 text-4xl font-semibold w-[450px] text-zinc-500">{project.data.details}</p>
+       <div className=' px-3 md:px-10 py-5 flex flex-col gap-6 uppercase '>
+       <h2 className="mt-4 text-xl md:text-3xl  z-50 font-bold">{project.data.title}</h2>
+       <p className="mt-2 text-2xl md:text-4xl font-semibold md:w-[450px] text-zinc-500">{project.data.details}</p>
 
        <div className='relative w-full h-full  bg-zinc-500  rounded-xl'>
         <p
-          className="  text-white text-xl font-semibold p-10  uppercase"
+          className="  text-white text-sm md:text-xl font-semibold p-5 md:p-10  uppercase"
         >
           {project.data.discription}
         </p>
