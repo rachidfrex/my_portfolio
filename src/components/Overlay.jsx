@@ -7,11 +7,15 @@ const Overlay = ({ project, onClose }) => {
   const contentRef = useRef(null);
 
   useEffect(() => {
+    document.body.style.overflow = 'hidden';
     gsap.fromTo(overlayRef.current, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: 'power2.out' });
     gsap.fromTo(contentRef.current, 
       { scale: 0.5, opacity: 0 }, 
       { scale: 1, opacity: 1, duration: 0.5, ease: 'power2.out' }
     );
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, []);
 
   const handleClose = () => {
@@ -21,9 +25,9 @@ const Overlay = ({ project, onClose }) => {
   return (
     <div
       ref={overlayRef}
-      className="fixed overflow-auto top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50"
+      className=" overflow-auto fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50"
     >
-      <div ref={contentRef} className="bg-white w-[95%] lg:w-2/3 max-w-7xl rounded-lg n relative">
+      <div ref={contentRef} className="bg-white w-[95%] lg:w-2/3 max-w-7xl mt-32 mb-5  rounded-lg  relative">
         <button
           onClick={handleClose}
           className="absolute top-1 z-50 right-1 bg-black rounded-full p-1"
