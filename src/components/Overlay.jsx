@@ -27,7 +27,7 @@ const Overlay = ({ project, onClose }) => {
       ref={overlayRef}
       className=" overflow-auto fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50"
     >
-      <div ref={contentRef} className="bg-white w-[95%] lg:w-2/3 max-w-7xl mt-44 md:mt-36 mb-5  rounded-lg  relative">
+      <div ref={contentRef} className="bg-white w-[95%] lg:w-2/3 max-w-7xl mt-37 md:mt-36 mb-5  rounded-lg  relative">
         <button
           onClick={handleClose}
           className="absolute top-1 z-50 right-1 bg-black rounded-full p-1"
