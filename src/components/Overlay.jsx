@@ -23,16 +23,18 @@ const Overlay = ({ project, onClose }) => {
       ref={overlayRef}
       className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50"
     >
-      <div ref={contentRef} className="bg-white rounded-lg w-4/5 lg:w-3/5 relative">
+      <div ref={contentRef} className="bg-white w-[100%] bg:w-2/3 rounded-lg n relative">
         <button
           onClick={handleClose}
-          className="absolute top-1 right-1 bg-black rounded-full p-1"
+          className="absolute top-1 z-50 right-1 bg-black rounded-full p-1"
         >
             <IoCloseSharp  color='white' size={19}/>
         </button>
        <div className='p-5'>
-       <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
-        <h2 className="mt-4 text-2xl font-bold">{project.title}</h2>
+       <div className="image-overlay-wrapper relative w-full h-[453px] rounded-lg">
+            <img src={project.data.cover} alt={project.title} className="w-full bg-gradient-to-b  h-full object-cover object-left-top rounded-lg" />
+            <h2 className="mt-4 text-2xl z-50 font-bold">{project.title}</h2>
+        </div>
         <p className="mt-2">{project.details}</p>
        </div>
       </div>
