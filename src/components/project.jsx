@@ -8,6 +8,7 @@ import naghma from "../assets/project-images/naghma.jpeg"
 import gomanga from "../assets/project-images/gomanga.jpeg"
 // import { data } from "autoprefixer";
 import blogcover from "../assets/blog-images/acueal1.png"
+import { data } from "autoprefixer";
 function Project() {
   const [selectedProject, setSelectedProject] = useState(null);
   const projectsRef = useRef(null);
@@ -73,6 +74,11 @@ function Project() {
         { name: "react", color: "bg-blue-500" },
         { name: "tailwind", color: "bg-sky-400" }
       ],
+      data:{
+         title: "Naghma Coffee",
+        cover: naghma,
+        details: "A beautiful website for a coffee shop built with React and Tailwind CSS."
+      },
       title: "Naghma Coffee",
       details: "A beautiful website for a coffee shop built with React and Tailwind CSS."
     },
@@ -83,6 +89,11 @@ function Project() {
         { name: "tailwind", color: "bg-sky-400" },
         { name: "mysql", color: "bg-blue-900" }
       ],
+      data:{
+        title: "GoManga",
+        cover: gomanga,
+        details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
+      },
       title: "GoManga",
       details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
     }

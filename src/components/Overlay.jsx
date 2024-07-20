@@ -33,11 +33,11 @@ const Overlay = ({ project, onClose }) => {
        <div className='p-5 '>
        <div className='relative w-full h-[453px] rounded-lg'>
           <img src={project.data.cover} alt={project.title} className="w-full h-full object-cover object-top rounded-lg" />
-          <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b  from-transparent  opacity-75'></div>
+          {/* <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b  from-transparent to-black-100  opacity-50'></div> */}
       </div>
-        <h2 className="mt-4 text-2xl z-50 font-bold">{project.title}</h2>
+        <h2 className="mt-4 text-2xl z-50 font-bold">{project.data.title}</h2>
 
-        <p className="mt-2">{project.details}</p>
+        <p className="mt-2">{project.data.details}</p>
        </div>
       </div>
     </div>
