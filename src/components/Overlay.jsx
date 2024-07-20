@@ -1,7 +1,7 @@
 // src/components/Overlay.js
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-
+import { IoCloseSharp } from "react-icons/io5";
 const Overlay = ({ project, onClose }) => {
   const overlayRef = useRef(null);
   const contentRef = useRef(null);
@@ -26,9 +26,9 @@ const Overlay = ({ project, onClose }) => {
       <div ref={contentRef} className="bg-white rounded-lg w-4/5 lg:w-3/5 relative">
         <button
           onClick={handleClose}
-          className="absolute top-1 right-1 bg-red-600 text-white rounded-full px-2 py-1"
+          className="absolute top-1 right-1 bg-black rounded-full p-1"
         >
-          
+            <IoCloseSharp  color='white' size={19}/>
         </button>
        <div className='p-5'>
        <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
