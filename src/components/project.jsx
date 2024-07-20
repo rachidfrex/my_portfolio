@@ -65,7 +65,8 @@ function Project() {
       data:{
         title: "offblog",
         cover: blogcover,
-        details: "A blog website built with React, Tailwind CSS, and Laravel."
+        details: "Created a Blog website  with a Beautiful Design",
+        discription: " i build a blog website with a beautiful design and a lot of features like comments, likes, and a lot of other features. i used react for the frontend and laravel for the backend."
       }
     },
     {
@@ -77,7 +78,7 @@ function Project() {
       data:{
          title: "Naghma Coffee",
         cover: naghma,
-        details: "A beautiful website for a coffee shop built with React and Tailwind CSS."
+        details: " A beautiful website for a coffee shop built with React and Tailwind CSS."
       },
       title: "Naghma Coffee",
       details: "A beautiful website for a coffee shop built with React and Tailwind CSS."
