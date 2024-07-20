@@ -15,8 +15,8 @@ const Cards = () => {
                     <span className="bg-custom-gray-700 py-1 px-2 rounded">Ranking</span>
                 </div>
             </Card>
-            <Card title="Responsive Website" description="Encourage sales with a user-friendly website optimized for restaurants." buttonLabel="Customize" status="Active" icon={<SiSquarespace/>} buttonColor="blue" >
-                <ul className="text-xs text-custom-gray-400  pl-5 mt-2 list-none">
+            <Card  title="Responsive Website" description="Encourage sales with a user-friendly website optimized for restaurants." buttonLabel="Customize" status="Active" icon={<SiSquarespace/>} buttonColor="blue" >
+                <ul className="text-xs text-custom-gray-400 flex flex-col gap-4  pl-5 mt-2 list-none">
                     <li className='flex gap-1 justify-start  items-center'> <MdOutlineCheckCircleOutline color='green' size={16} /> Designed for Restaurant Business</li>
                     <li className='flex gap-1 justify-start  items-center'> <MdOutlineCheckCircleOutline color='green' size={16}  /> Mobile Responsive</li>
                     <li className='flex gap-1 justify-start  items-center'> <MdOutlineCheckCircleOutline color='green' size={16} /> Custom Domain</li>
