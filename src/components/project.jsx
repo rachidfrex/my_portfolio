@@ -66,7 +66,7 @@ function Project() {
         title: "offblog",
         cover: blogcover,
         details: "Created a Blog website  with a Beautiful Design",
-        discription: " i build a blog website with a beautiful design and a lot of features like comments, likes, and a lot of other features. i used react for the frontend and laravel for the backend."
+        description: " i build a blog website with a beautiful design and a lot of features like comments, likes, and a lot of other features. i used react for the frontend and laravel for the backend."
       }
     },
     {
@@ -76,10 +76,12 @@ function Project() {
         { name: "tailwind", color: "bg-sky-400" }
       ],
       data:{
-         title: "Naghma Coffee",
+        title: "Naghma Coffee",
         cover: naghma,
-        details: " A beautiful website for a coffee shop built with React and Tailwind CSS."
-      },
+        details: "A beautifully designed website for a coffee shop",
+        description: "The Naghma Coffee project features a visually appealing website for a coffee shop, developed using Next.js and Tailwind CSS. Additionally, a comprehensive management application was created for the company, enabling the calculation of income and expenses, tracking of product and supplier statuses, and printing of detailed reports. This application enhances operational efficiency and provides valuable insights for the business."
+      }
+      ,
       title: "Naghma Coffee",
       details: "A beautiful website for a coffee shop built with React and Tailwind CSS."
     },
@@ -93,8 +95,10 @@ function Project() {
       data:{
         title: "GoManga",
         cover: gomanga,
-        details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
-      },
+        details: "GoManga is a premier platform for reading your favorite manga online.",
+        description: "With GoManga, you can enjoy reading your favorite manga and manhwa online. The platform is built using Laravel with Livewire for the backend, ensuring a robust and dynamic experience. The frontend is styled with Tailwind CSS, providing a beautiful and responsive design."
+      }
+       ,
       title: "GoManga",
       details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
     }
