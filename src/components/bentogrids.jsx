@@ -19,7 +19,7 @@ const Bentogrids = () => {
                 <div className='bg-indigo-200  col-span-4  row-span-1 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center'>
                 colomn 2
                 </div>
-                <div className='bg-violet-500 col-span-4  row-span-1 lg:col-span-1 lg:row-span-2 rounded-3xl flex  justify-center items-center'>
+                <div className='bg-violet-500 col-span-4  row-span-2 lg:col-span-1 lg:row-span-2 rounded-3xl flex  justify-center items-center'>
                     <div className='flex-col justify-center  g items-center text-center'>
                     <h3 className='text-3xl font-semibold '>
                         Modern and <br /> Beautiful UI
