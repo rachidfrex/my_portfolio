@@ -17,19 +17,19 @@ import { FaLinkedinIn } from "react-icons/fa6";
 const Bentogrids = () => {
     return (
         <div
-            className='max-w-7xl  px-4 lg:mx-auto w-full h-[700px] flex justify-center   items-center'
+            className='max-w-7xl  px-3 lg:mx-auto w-full  lg:h-[700px] flex justify-center   items-center'
         >
             <div
-                className='grid grid-cols-12  grid-rows-10 lg:grid-rows-6 gap-4 h-full w-full'
+                className=' flex flex-col  justify-center lg:grid grid-cols-12  grid-rows-10 lg:grid-rows-6 gap-4 h-full w-full'
             >
 
-                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700   col-span-4  row-span-1  lg:col-span-4 lg:row-span-3 rounded-3xl flex justify-center items-center '>
+                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  lg:h-auto     lg:col-span-4 lg:row-span-3 rounded-3xl flex justify-center items-center '>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.32),rgba(255,255,255,0))]"></div>
 
-                    <img className='  object-cover object-top h-full  w-full  ' src={sukuna} alt="" />
+                    <img className='  object-cover object-top h-[400px] lg:h-full  w-full  ' src={sukuna} alt="" />
                 </div>
 
-                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 lg:col-span-5 lg:row-span-2 rounded-3xl flex justify-center items-center'>
+                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700   lg:col-span-5 lg:row-span-2 rounded-3xl flex justify-center items-center'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.32),rgba(255,255,255,0))]"></div>
                     <p
                         className=' p-6   text-sm '
@@ -40,7 +40,7 @@ const Bentogrids = () => {
 
                 </div>
                 {/* favorit animal  */}
-                <div className=' text-white overflow-hidden col-span-4  border-2 border-gray-700  row-span-6 lg:col-span-3 lg:row-span-4 rounded-3xl flex  justify-center items-center'>
+                <div className=' text-white overflow-hidden   border-2 border-gray-700  lg:col-span-3 lg:row-span-4 rounded-3xl flex  justify-center items-center'>
 
                     <div className='flex-col     justify-center   items-center text-center'>
                         <div className='    w-full relative -top-6 p-1  overflow-hidden '>
@@ -57,7 +57,7 @@ const Bentogrids = () => {
                     </div>
                 </div>
                 {/* my name  */}
-                <div className='  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-4 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
+                <div className='  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.32),rgba(255,255,255,0))]"></div>
 
                    <div className='flex justify-center  items-center w-full gap-5'>
@@ -70,7 +70,7 @@ const Bentogrids = () => {
                    </div>
                 </div>
                 {/* logo of me  */}
-                <div className='  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-4 lg:col-span-3 lg:row-span-2 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
+                <div className='  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6   lg:col-span-3 lg:row-span-2 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.32),rgba(255,255,255,0))]"></div>
                     <img src={svg} alt="svg" className=" w-52 h-52  -right-[70px] -top-20 opacity-25 -z-10 bg-cover absolute" />
 
@@ -81,7 +81,7 @@ const Bentogrids = () => {
                 </div>
                 
                 {/* frent end  */}
-                <div className='dark:bg-gray-950/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 py-10 lg:col-span-3 lg:row-span-3 rounded-3xl flex flex-col justify-center items-center'>
+                <div className='dark:bg-gray-950/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700   py-10 lg:col-span-3 lg:row-span-3 rounded-3xl flex flex-col justify-center items-center'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
                     <div className=' flex justify-center items-center h-full w-full gap-2 ' >
 
@@ -114,7 +114,7 @@ const Bentogrids = () => {
                 </div>
                 {/* end of the frent end colomn */}
                 {/* back end info */}
-                <div className='dark:bg-gray-950/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 py-10 lg:col-span-3 lg:row-span-3 rounded-3xl flex flex-col justify-center items-center'>
+                <div className='dark:bg-gray-950/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  py-10 lg:col-span-3 lg:row-span-3 rounded-3xl flex flex-col justify-center items-center'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
                     <div className=' flex justify-center items-center h-full w-full gap-2 ' >
 
@@ -144,7 +144,7 @@ const Bentogrids = () => {
                     </div>
                 </div>
                 {/* end of the backend info */}
-                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 lg:col-span-6 lg:row-span-2 rounded-3xl flex flex-col justify-center items-start'>
+                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  lg:col-span-6 lg:row-span-2 rounded-3xl flex flex-col justify-center items-start'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,120,0.32),rgba(255,255,255,0))]"></div>
                   
                         <div className='flex flex-col gap-5 h-full w-full  p-5 justify-start items-start'>
