@@ -42,7 +42,7 @@ const Overlay = ({ project, onClose }) => {
         <p
           className="  text-white text-sm md:text-xl font-semibold p-5 md:p-10  uppercase"
         >
-          {project.data.discription}
+          {project.data.description}
         </p>
           <img src={project.data.cover} alt={project.title} className="  w-full  h-[430px] md:h-[530px]  object-cover object-top " />
           {/* <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b  from-transparent to-black-100  opacity-50'></div> */}

@@ -66,7 +66,7 @@ function Project() {
         title: "offblog",
         cover: blogcover,
         details: "Created a Blog website  with a Beautiful Design",
-        discription: " i build a blog website with a beautiful design and a lot of features like comments, likes, and a lot of other features. i used react for the frontend and laravel for the backend."
+        description: " i build a blog website with a beautiful design and a lot of features like comments, likes, and a lot of other features. i used react for the frontend and laravel for the backend."
       }
     },
     {
@@ -76,10 +76,9 @@ function Project() {
         { name: "tailwind", color: "bg-sky-400" }
       ],
       data:{
-         title: "Naghma Coffee",
+        title: "Naghma Coffee",
         cover: naghma,
-        details: " A beautiful website for a coffee shop built with React and Tailwind CSS.",
-        discription: "A beautiful website for a coffee shop built with React and Tailwind CSS."
+        details: " A beautiful website for a coffee shop built with React and Tailwind CSS."
       },
       title: "Naghma Coffee",
       details: "A beautiful website for a coffee shop built with React and Tailwind CSS."
@@ -94,8 +93,7 @@ function Project() {
       data:{
         title: "GoManga",
         cover: gomanga,
-        details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL.",
-        discription: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
+        details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
       },
       title: "GoManga",
       details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
