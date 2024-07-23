@@ -9,7 +9,7 @@ const Bentogrids = () => {
             className='max-w-[1550px]  px-4 lg:mx-auto w-full h-screen flex justify-center   items-center'
         >
             <div
-                className='grid grid-cols-4  grid-rows-6 lg:grid-rows-3 gap-4 h-full w-full'
+                className='grid grid-cols-4  grid-rows-9 lg:grid-rows-3 gap-4 h-full w-full'
             >
                     
                 <div className='bg-indigo-200  col-span-4  row-span-1  lg:col-span-1 lg:row-span-2 rounded-3xl flex justify-center items-center p-5'>
@@ -19,7 +19,7 @@ const Bentogrids = () => {
                 <div className='bg-indigo-200  col-span-4  row-span-1 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center'>
                 colomn 2
                 </div>
-                <div className='bg-violet-500 col-span-4  row-span-2 lg:col-span-1 lg:row-span-2 rounded-3xl flex  justify-center items-center'>
+                <div className='bg-violet-500 col-span-4  row-span-3 lg:col-span-1 lg:row-span-2 rounded-3xl flex  justify-center items-center'>
                     <div className='flex-col justify-center  g items-center text-center'>
                     <h3 className='text-3xl font-semibold '>
                         Modern and <br /> Beautiful UI
