@@ -29,7 +29,7 @@ const Bentogrids = () => {
                     </p>
                     </div>
                 </div>
-                <div className= '  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-1 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
+                <div className= '  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-2 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full  bg-transparent bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
                     <img src={svg} alt="svg" className=" w-52 h-52  -right-[70px] -top-20 opacity-25 -z-10 bg-cover absolute" />
                     
