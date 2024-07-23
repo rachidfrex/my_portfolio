@@ -78,7 +78,8 @@ function Project() {
       data:{
          title: "Naghma Coffee",
         cover: naghma,
-        details: " A beautiful website for a coffee shop built with React and Tailwind CSS."
+        details: " A beautiful website for a coffee shop built with React and Tailwind CSS.",
+        discription: "A beautiful website for a coffee shop built with React and Tailwind CSS."
       },
       title: "Naghma Coffee",
       details: "A beautiful website for a coffee shop built with React and Tailwind CSS."
@@ -93,7 +94,8 @@ function Project() {
       data:{
         title: "GoManga",
         cover: gomanga,
-        details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
+        details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL.",
+        discription: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
       },
       title: "GoManga",
       details: "An online manga reading platform developed with Laravel, Tailwind, and MySQL."
