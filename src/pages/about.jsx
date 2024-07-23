@@ -5,6 +5,7 @@ import Cards from "../components/cards";
 import deftar from "../assets/svg/deftar.svg";
 import AnimatedSVG from '../components/animatsvg';
 import GridPathAnimation from  '../components/gridpathanimation';
+import Bentogrids from '../components/bentogrids';
 
 
 const About = () => {
@@ -22,6 +23,8 @@ const About = () => {
         </div>
       
        <Cards/>
+       <Bentogrids/>
+
         
 
        </div>
