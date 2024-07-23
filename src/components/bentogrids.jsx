@@ -20,21 +20,21 @@ const Bentogrids = () => {
                 <div className='bg-indigo-200  col-span-4  row-span-1 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center'>
                 colomn 2
                 </div>
-                <div className='bg-violet-500 col-span-4 overflow-hidden  row-span-3 lg:col-span-1 lg:row-span-2 rounded-3xl flex  justify-center items-center'>
+                <div className='bg-violet-500 overflow-hidden col-span-4  row-span-6 lg:col-span-1 lg:row-span-2 rounded-3xl flex  justify-center items-center'>
                    
                     <div className='flex-col     justify-center   items-center text-center'>
-                    <div className='relative -left-8 w-[140%]  '>
+                    <div className='relative -left-8 w-[120%] md:w-[140%]  '>
                     <img src={terminal} alt=""   className=' w-full    '/>
                     </div>
                     <h3 className='text-3xl font-semibold '>
                         Modern and <br /> Beautiful UI
                     </h3>
-                    <p className='mt-5 text-lg'>
+                    <p className=' mt-2 md:mt-5 text-lg'>
                         Create stunning <br /> profesional-quality <br /> website
                     </p>
                     </div>
                 </div>
-                <div className= '  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-2 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
+                <div className= '  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-4 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
                     <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
                     <img src={svg} alt="svg" className=" w-52 h-52  -right-[70px] -top-20 opacity-25 -z-10 bg-cover absolute" />
                     
