@@ -104,3 +104,30 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
     border-radius: inherit; 
 } */
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.hobby-box, .card {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hobby-box h4, .card h4 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.hobbies-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hobbies-list li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
