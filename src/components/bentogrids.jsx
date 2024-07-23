@@ -3,24 +3,34 @@ import svg from "../assets/svg/Frame3.svg";
 import Linelaser2 from "../components/linelaser2";
 import logo from "../assets/logo.png"
 import terminal from "../assets/terminal.png"
+import sukuna from "../assets/sukuna.jpeg"
 
 const Bentogrids = () => {
     return (
         <div
-            className='max-w-[1550px]  px-4 lg:mx-auto w-full h-screen flex justify-center   items-center'
+            className='max-w-[1500px]  px-4 lg:mx-auto w-full h-[800px] flex justify-center   items-center'
         >
             <div
-                className='grid grid-cols-4  grid-rows-10 lg:grid-rows-3 gap-4 h-full w-full'
+                className='grid grid-cols-4  grid-rows-10 lg:grid-rows-6 gap-4 h-full w-full'
             >
                     
-                <div className='bg-indigo-200  col-span-4  row-span-1  lg:col-span-1 lg:row-span-2 rounded-3xl flex justify-center items-center p-5'>
-                colomn 1
+                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700   col-span-4  row-span-1  lg:col-span-1 lg:row-span-3 rounded-3xl flex justify-center items-center '>
+                <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.32),rgba(255,255,255,0))]"></div>
+                
+                <img  className='  object-cover object-top h-full  w-full  ' src={sukuna} alt="" />
                 </div>
             
-                <div className='bg-indigo-200  col-span-4  row-span-1 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center'>
-                colomn 2
+                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 lg:col-span-2 lg:row-span-2 rounded-3xl flex justify-center items-center'>
+                <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.32),rgba(255,255,255,0))]"></div>
+                <p
+                className=' p-6  text-lg '
+                >
+                Hi, I'm <strong className=' text-blue-400 text-2xl '>rachid el hajouji</strong> , a passionate full stack developer with expertise in both front end and back end technologies. I love creating innovative solutions and bringing ideas to life through code. When I'm not coding, I enjoy reading mangas and exploring new tech trends.
+                </p>
+                
+                
                 </div>
-                <div className='bg-violet-500 overflow-hidden col-span-4  row-span-6 lg:col-span-1 lg:row-span-2 rounded-3xl flex  justify-center items-center'>
+                <div className='bg-violet-500 overflow-hidden col-span-4  border-2 border-gray-700  row-span-6 lg:col-span-1 lg:row-span-4 rounded-3xl flex  justify-center items-center'>
                    
                     <div className='flex-col     justify-center   items-center text-center'>
                     <div className='relative -left-8 w-[120%] md:w-[140%]  '>
@@ -34,8 +44,8 @@ const Bentogrids = () => {
                     </p>
                     </div>
                 </div>
-                <div className= '  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-4 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
-                    <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+                <div className= '  dark:bg-blue-900/80 relative overflow-hidden   backdrop-blur-lg text-white p-6  col-span-4  row-span-4 lg:col-span-2 lg:row-span-2 rounded-3xl flex justify-center items-center border-2 border-gray-700'>
+                    <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.32),rgba(255,255,255,0))]"></div>
                     <img src={svg} alt="svg" className=" w-52 h-52  -right-[70px] -top-20 opacity-25 -z-10 bg-cover absolute" />
                     
                     <img src={logo} className=' w-[350px]' alt="logo" />
@@ -44,11 +54,19 @@ const Bentogrids = () => {
 
                     </div>
                 </div>
-                <div className='bg-indigo-200  col-span-4  row-span-1 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center'>
-                   colomn 5
+                <div className='dark:bg-gray-950/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 py-10 lg:col-span-1 lg:row-span-3 rounded-3xl flex justify-center items-center'>
+                <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
+                colomn 5
                 </div>
-                <div className='bg-indigo-200 col-span-4  row-span-1 lg:col-span-2 lg:row-span-1 rounded-3xl flex justify-center items-center'>
+                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 lg:col-span-1 lg:row-span-2 rounded-3xl flex justify-center items-center'>
+                <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,120,0.32),rgba(255,255,255,0))]"></div>
+
                     colomn 6
+                </div>
+                <div className='dark:bg-blue-900/80 relative overflow-hidden  backdrop-blur-lg text-white border-2 border-gray-700  col-span-4  row-span-1 lg:col-span-2 lg:row-span-2 rounded-3xl flex justify-center items-center'>
+                <div class="absolute right-0 blur-sm top-0 z-59 h-full w-full   bg-transparent bg-[radial-gradient(ellipse_90%_90%_at_50%_10%,rgba(120,119,120,0.32),rgba(255,255,255,0))]"></div>
+
+                    colomn 7
                 </div>
                 
 
