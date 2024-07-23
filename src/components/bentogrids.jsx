@@ -40,20 +40,22 @@ const Bentogrids = () => {
 
                 </div>
                 {/* favorit animal  */}
-                <div className=' text-white overflow-hidden   border-2 border-gray-700  lg:col-span-3 lg:row-span-4 rounded-3xl flex  justify-center items-center'>
+                <div className=' text-white overflow-hidden  relative  border-2 border-gray-700  lg:col-span-3 lg:row-span-4 rounded-3xl flex  justify-center items-center'>
 
-                    <div className='flex-col     justify-center   items-center text-center'>
-                        <div className='    w-full relative -top-6 p-1  overflow-hidden '>
-                            <img src={cat} alt="" className='  object-contain object-top w-full  rounded-2xl   ' />
+                    <div className=' lg:flex flex-col w-full   justify-start   items-start text-center'>
+                        
+                         <img src={cat} alt="" className=' object-cover  lg:p-1 h-full lg:mb-6 w-full  rounded-2xl   ' />
+                      
+                        <div className=' absolute bottom-3 lg:static'>
+                            <h3 className='text-lg w-full text-start px-5 font-semibold '>
+                            Favorite Animal
+                            </h3>
+                            <p className='  mt-1  w-full text-xs text-start px-5'>
+                            My favorite animal is the cat. Cats are independent, curious, and graceful creatures. 
+                            I admire their agility and playful nature, which often inspires my own creativity
+                            and problem-solving skills.
+                            </p>
                         </div>
-                        <h3 className='text-lg w-full text-start px-5 font-semibold '>
-                        Favorite Animal
-                        </h3>
-                        <p className=' mt-1  w-full text-xs text-start px-5'>
-                        My favorite animal is the cat. Cats are independent, curious, and graceful creatures. 
-                        I admire their agility and playful nature, which often inspires my own creativity
-                         and problem-solving skills.
-                        </p>
                     </div>
                 </div>
                 {/* my name  */}
